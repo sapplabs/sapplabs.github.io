@@ -1,0 +1,15 @@
+# app-ads.txt for sapplabs (PDF Viewer, Docx Reader)
+# Spec: https://iabtechlab.com/app-ads-txt/
+
+google.com, pub-7047415423756993, DIRECT, f08c47fec0942fa0
+
+# TODO: ironSource / Unity LevelPlay — paste the exact line from the
+# ironSource/LevelPlay dashboard's own app-ads.txt page (publisher/account
+# ID is account-specific, not guessable):
+# ironsrc.com, <your ironSource publisher ID>, DIRECT, <cert ID>
+
+# TODO: Unity Ads — paste the exact line from Unity's dashboard:
+# unityads.unity3d.com, <your Unity organization/publisher ID>, DIRECT, <cert ID>
+
+# TODO: AppLovin — paste the exact line from AppLovin's dashboard:
+# applovin.com, <your AppLovin account ID>, DIRECT, <cert ID>
