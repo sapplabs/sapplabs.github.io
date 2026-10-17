@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sapp Labs — simple, honest Android apps</title>
-<meta name="description" content="Sapp Labs builds small, focused Android apps — PDF Reader and Docx Reader — that do one job well.">
+<title>Sapp Labs</title>
+<meta name="description" content="Sapp Labs builds simple, privacy-first Android apps — independently, not by a corporation collecting and selling your data.">
 <style>
   :root{
     --bg:#f7f7f9;
@@ -57,8 +57,8 @@
   .hero{padding:64px 0 48px; text-align:left}
   .hero h1{
     font-size:clamp(32px,5vw,48px);
-    line-height:1.12;
-    margin:0 0 16px;
+    line-height:1.14;
+    margin:0 0 18px;
     letter-spacing:-.02em;
   }
   .hero h1 .grad{
@@ -66,8 +66,9 @@
     -webkit-background-clip:text; background-clip:text; color:transparent;
   }
   .hero p{
-    font-size:18px; color:var(--text-muted); max-width:560px; margin:0;
+    font-size:18px; color:var(--text-muted); max-width:600px; margin:0 0 10px;
   }
+  .hero p.sub{font-size:15.5px; max-width:600px}
 
   .section-label{
     font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
@@ -97,8 +98,7 @@
     box-shadow:0 2px 6px rgba(0,0,0,.15);
     flex-shrink:0;
   }
-  .app-head h2{font-size:19px; margin:0 0 4px; letter-spacing:-.01em}
-  .app-head .tag{font-size:13px; color:var(--text-muted)}
+  .app-head h2{font-size:19px; margin:0; letter-spacing:-.01em}
 
   .app-card p.desc{margin:0; color:var(--text-muted); font-size:14.5px; flex-grow:1}
 
@@ -119,12 +119,18 @@
   }
   @media (max-width:680px){ .principles{grid-template-columns:1fr} }
   .principle{
-    padding:20px; border-radius:14px; border:1px solid var(--border);
+    padding:22px; border-radius:14px; border:1px solid var(--border);
     background:var(--bg-alt);
   }
   .principle .icon{font-size:20px; margin-bottom:10px; display:block}
   .principle h3{font-size:15px; margin:0 0 6px}
   .principle p{font-size:13.5px; color:var(--text-muted); margin:0}
+
+  .note{
+    border-radius:14px; border:1px solid var(--border); background:var(--bg-alt);
+    padding:22px 24px; margin-bottom:56px; font-size:15px; color:var(--text-muted);
+  }
+  .note strong{color:var(--text)}
 
   footer{
     border-top:1px solid var(--border);
@@ -151,22 +157,41 @@
     </header>
 
     <section class="hero">
-      <h1>Small Android apps<br>that <span class="grad">just open your files.</span></h1>
-      <p>Sapp Labs builds focused, no-fuss document viewers for Android — no accounts, no clutter, no asking for more permissions than the job needs.</p>
+      <h1>Apps made by <span class="grad">one person</span>,<br>not a corporation.</h1>
+      <p>Sapp Labs isn't a big company looking to collect your data and sell it. It's an independent, one-person effort to put genuinely useful technology in your hands — for free or close to it — without misusing your personal information to do it.</p>
+      <p class="sub">Everything stays on your device. Nothing you open is ever uploaded anywhere.</p>
+    </section>
+
+    <section>
+      <p class="section-label">How we build</p>
+      <div class="principles">
+        <div class="principle">
+          <span class="icon">🔒</span>
+          <h3>Privacy first, always</h3>
+          <p>Your files and data stay on your device — never uploaded, tracked, or sold to anyone. That's not a feature, it's the baseline.</p>
+        </div>
+        <div class="principle">
+          <span class="icon">🧑‍💻</span>
+          <h3>Independent, not corporate</h3>
+          <p>No investors, no data business model behind the scenes — just one person building things and standing behind them.</p>
+        </div>
+        <div class="principle">
+          <span class="icon">✨</span>
+          <h3>Simple, on purpose</h3>
+          <p>Every extra screen, setting, and complication gets stripped out. What's left is simple, easy to navigate, and just works.</p>
+        </div>
+      </div>
     </section>
 
     <section id="apps">
-      <p class="section-label">Our Apps</p>
+      <p class="section-label">Apps</p>
       <div class="apps">
         <div class="app-card">
           <div class="app-head">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAED0lEQVR4Xu2dPWgUQRTH/4eVYJdKTSVEu1jYaGVshVgJgtrYqJ2gWFmECNoIgdiZysJEAmJhjK1JISYSC+1iQho/C00TUQslMibL7c3N7dvzzbvdzf4Xrrm599b399t587GBNMCjUAKNQs/Ok4MCCn4IKIACCiZQ8OnZA6ouYPPMgc2C76Hb099vTK9d6DbI6vfqHlBBAY5laSTUVUBpJNRGwJ9zN7Br8pZfSQrvCbUR8PvuCzQWZrFr6napJNRKgCNfNgm1E1A2CbUUUCYJtRVQFgm1FlAGCbUXULQECtielBY1O6KA1KqgCAkU4C3Lei2BAgLbnL2UQAEd9pl7JYECMjb6eyGBAoQ3LdYSKCDHqy5LCRSQQ4DlYo0CcgroJKExvaZiqAp2F1WVd8LuhUyMwy9HFBCDqiIHBSjgxQilgBgUFTkoQAEvRigFxKCoyEEBCngxQikgBkVFDgpQwIsRSgExKCpyUIACXoxQCohBUZGDAhTwYoRSQAyKihwUoIAXI5QCYlBU5KAABbwYoRQQg6IiBwUo4MUIrZaAkxcB9wkdPzaAj8vA10/Aq1lg5XX7rzrFv18Gfm0Ab+aBxRng5/fwOa7cAwaO5OM+fil8DV70zhHgY3n5BJi82fptlsDkl07k4zFgYaYdNAVk9IDQczk3BTwaa7bkEZD8+tkE4D7pgwI8Aa7MpEvN4BDQf7AV2sgw8O3z1ne+gHR8KNYvI74A10vWt3P7D4ArZcl5M4pWtUtQnqc03Qt8AX58m6AlYPxyE58vIGedzxo0dp6Ao8PA+ZHmPbun3IEK9YCQwDtzwO49zfjrQ81BmQK8EhQC6GYpDlRydCsgCzIF9ECAX4bcIO7KmDsoIIcAV35cGUoON1A+GM1fgrLGCV+Am+quf2kv8ave5GDHDsIOwOLTrdvr2wcMHgcOn2i93fRAKQ3C0jiRdxoaKo0dJFR7EM6aXri2dP2X4Ca5uukBnc5PAdvwJ691biuwB7Q/Ml39ebq0knV7OCtLwNv58FbC/wjgIJySlgdgVlnKE89paAbBPAC1AkZngL69XIgFOVoLGDoLnL4aXsRxHRDYTOtitvGPqi8wmcb2HwL2DwDHTnWewlKAgYCscuVvZVNADwWE4FOAsYAP74DVJeD5w877+LXfC5JWvhVsr9ZWRAUBS5dMARIh43YKMAYspacAiZBxOwUYA5bSU4BEyLidAowBS+kpQCJk3E4BxoCl9BQgETJupwBjwFJ6CpAIGbdTgDFgKT0FSISM2ynAGLCUngIkQsbtFGAMWEpPARIh43YKMAYspacAiZBxOwUYA5bSU4BEyLidAowBS+kLFyBdINuzCaj/fwAB6whQgI6fOpoC1Ah1CShAx08dTQFqhLoEfwFnfiWOQGCCPwAAAABJRU5ErkJggg==" alt="PDF Reader icon">
-            <div>
-              <h2>PDF Reader</h2>
-              <div class="tag">Fast, lightweight PDF viewer</div>
-            </div>
+            <img src="assets/icon-pdf-reader.png" alt="PDF Reader icon">
+            <h2>PDF Reader</h2>
           </div>
-          <p class="desc">Opens PDFs straight off your device — browse local files and read them instantly, no cloud upload, no sign-in.</p>
+          <p class="desc">Open and read PDF files straight from your device. No sign-in, no cloud upload, no clutter — just your files, kept simple.</p>
           <a class="cta" href="https://play.google.com/store/apps/details?id=com.gappstudios.autowifi3gdataswitch.san.basicpdfviewer" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.37L13.69 12l-9.85 9.87c-.5-.26-.84-.78-.84-1.37zm13.81-7.81L6.05 2.66l10.76 6.14c.6.34.6 1.2 0 1.55l-10.76 6.14 10.76-6.15zM17.5 12l3.07-1.75c.63-.36 1.43.1 1.43.82s-.5.9-1.43.82L17.5 12z"/></svg>
             Get it on Google Play
@@ -175,13 +200,10 @@
 
         <div class="app-card">
           <div class="app-head">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAE9UlEQVR4Xu2dPWgVQRDHN4r4ARoUEUP8IAgiEQN2olY2YgobBcFOglYWSsAqpIixUYIW2ggJNgqiaQwoWqQzEQs/MYgSg5qQICGfmBiCRv7ig3t7O5fbt/Pe3e3NQJr3dufe/X+7MzuzRaqUWKIKVCX6dHm4EgAJLwIBIAASViDhx8sOyDqAmkvvlhJ+B6vHLy2pO2PXGs5YTSrjYOcdkDUA0DJNEHIJIE0QcgOg9Xitans0UhRM0rATcgPgZcte1fN2Sl3uSReEXAHA8k8bhNwBSBuEXAJIE4TcAkgLhFwDSAOE3ANIGoIA+F8ZJHU6EgCB0iwJCAJAa7RVGoIAMHQ6KwlBABCt5kpBEAARvf5KQBAAy1y2lBuCAIhx21VOCAIgBoByFmsCICYACsLo1QYnDZ0m40dl5U4YFzIcpocjAcChqoMPAeAgHsdUAcChooMPAeAgHsdUAcChooMPAeAgHsdUAcChooMPAeAgHsfUzAO4cGSzUYeHr6fV8ORi6LsDdesU/oI2M/9bdfVPGv2c3F+ttm1cFfru2cCsGhhbcGaQeQD3m3aEBIUq5+6NqKcDsyGBbp+uVUfr14c+39f+Sc38+hP6/HnzLiOAU53f1IuhOQHQ2rhFNR3cFBLieu+4utE77iTohjUr1PuW3UaRd7Z8dBYfDjK/A7Casap1w+rEKg1alKAmYAhV2GFxfJdKI/MAEJ8RJnT7PrmoDncMFn1MwcIgEzDsLOww3Tr7JlTb4x+lal40L/MA8DYIE1jduulxHQn7IpG0p+d/q4Yrn4tcdJyoUUjCujV3jyokeQ7zAgCVWPVESSXsgpDHbg4VnWyo8Yc6Bo0nrFKAeAGAWtkIEwgXBfvavidSI31lm8bjpISdxWVeAKCSJcIERIXVb12tnpyvi9QtznhTrnCB4QUA6nQTFItKqEHxPowuqMZbQ/8+ohI2dbwtFYIXAPDyVMFUOK9TCZVK3FRYowq83AOgBC4kVhMgxHP99FRI3FQCpirm3AOgQgxWbP+Xn6GKFuI/eDUVqqILIcYEDL0lnIA4zZsQRCViCIpcoFe06BN1v5kJVdEYe/busLEFgTkAymneAIAopmMjBO0fmgsVYADT1TcREhoFGUQ2tSD0Yy0HCK8AmOI2WhIjU4uhjmkh1ptCDY6jpgqYqwMaBOcVAKozilVdvXZl0YKNOh0B2nbDHQBXB9RbAFi1OA0tZ8H6IO4cXL7gRMVtXu0AqjOqixbsZsadE6ySOSF4BQDCUJ3RoGh6MRVnDmcH1NsQhBdbruOJMXoxRXVTg0LpnVKuXeDdDojq+UM0UzEVp09UjgSM3+MdgKhbL7ywKZYv1ynl7oB6HYKi7n3x4lQsj7or4O6Aeg0gqjOK76hYHpU7uDug3gOgkmrUbVZU7uC8gtSTt3c5gOt0Uik/AqBSShPPEQACIFv/woSbl+wAbkUt/QkAS8G4hwsAbkUt/QkAS8G4hwsAbkUt/QkAS8G4hwsAbkUt/QkAS8G4hwsAbkUt/QkAS8G4hycOgPuF8ubP+f8H5E0w7vcVANyKWvoTAJaCcQ8XANyKWvoTAJaCcQ//CxFNoo6CUqD6AAAAAElFTkSuQmCC" alt="Docx Reader icon">
-            <div>
-              <h2>Docx Reader</h2>
-              <div class="tag">Simple Word document viewer</div>
-            </div>
+            <img src="assets/icon-docx-reader.png" alt="Docx Reader icon">
+            <h2>Docx Reader</h2>
           </div>
-          <p class="desc">Renders real-world .docx files — including Word-authored documents with complex styling — without needing Microsoft Office installed.</p>
+          <p class="desc">Open and read Word documents straight from your device, without needing Microsoft Office installed. Just your files, kept simple.</p>
           <a class="cta" href="https://play.google.com/store/apps/details?id=com.docxreader.sapplabs.docxreader" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.37L13.69 12l-9.85 9.87c-.5-.26-.84-.78-.84-1.37zm13.81-7.81L6.05 2.66l10.76 6.14c.6.34.6 1.2 0 1.55l-10.76 6.14 10.76-6.15zM17.5 12l3.07-1.75c.63-.36 1.43.1 1.43.82s-.5.9-1.43.82L17.5 12z"/></svg>
             Get it on Google Play
@@ -190,26 +212,9 @@
       </div>
     </section>
 
-    <section>
-      <p class="section-label">What we care about</p>
-      <div class="principles">
-        <div class="principle">
-          <span class="icon">📁</span>
-          <h3>Local-first</h3>
-          <p>Your files are read from your device and never uploaded anywhere.</p>
-        </div>
-        <div class="principle">
-          <span class="icon">🧩</span>
-          <h3>One job, done well</h3>
-          <p>No bloated feature lists — each app does exactly what its name says.</p>
-        </div>
-        <div class="principle">
-          <span class="icon">🛠️</span>
-          <h3>Actually maintained</h3>
-          <p>Bugs get fixed and tested across real devices, not just left open.</p>
-        </div>
-      </div>
-    </section>
+    <div class="note">
+      <strong>Why free or close to it?</strong> These apps are supported by small, non-intrusive ads instead of your data — so the tech stays accessible without anyone needing to profit from your personal information.
+    </div>
 
     <footer>
       <div>© <span id="y">2026</span> Sapp Labs</div>
