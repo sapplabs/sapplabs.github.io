@@ -168,10 +168,10 @@ targetbetter.com, 82228, RESELLER
 vidoomy.com, 8953515, RESELLER
 my-cast.tv, 987033, RESELLER, 8c33fe1bd714ffd7
 
-# TODO: ironSource — per ironSource's own app-ads.txt docs, add this line
-# with your real Publisher Account ID (dashboard: Account/profile avatar
-# (bottom-left) -> Account -> API tab -> Publisher ID section):
-# ironsrc.com, <your ironSource Publisher Account ID>, DIRECT
+# ironSource Exchange (separate from the Unity Ads list above — see
+# docs.unity.com/en-us/grow/programmatic/ironsource-exchange/app-ads-txt)
+ironsrc.com, 279929, DIRECT
 
-# TODO: AppLovin — paste the exact line from AppLovin's dashboard:
+# TODO: AppLovin — not active yet; add once it is. Paste the exact line
+# from AppLovin's dashboard:
 # applovin.com, <your AppLovin account ID>, DIRECT, <cert ID>
