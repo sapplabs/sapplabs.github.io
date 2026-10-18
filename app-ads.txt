@@ -1,6 +1,8 @@
 # app-ads.txt for sapplabs (PDF Viewer, Docx Reader)
 # Spec: https://iabtechlab.com/app-ads-txt/
 
+OWNERDOMAIN=sapplabs.github.io
+
 google.com, pub-7047415423756993, DIRECT, f08c47fec0942fa0
 
 # Unity Ads / Unity LevelPlay mediation — as given by Unity's dashboard
@@ -166,12 +168,10 @@ targetbetter.com, 82228, RESELLER
 vidoomy.com, 8953515, RESELLER
 my-cast.tv, 987033, RESELLER, 8c33fe1bd714ffd7
 
-# TODO: ironSource — paste the exact line(s) from the ironSource/LevelPlay
-# dashboard's own app-ads.txt page, if it lists anything beyond what Unity
-# gave above (IronSource and Unity Ads are both part of Unity LevelPlay
-# mediation now, so this may already be covered by the unity.com DIRECT
-# line above — check ironSource's dashboard to confirm):
-# ironsrc.com, <your ironSource publisher ID>, DIRECT, <cert ID>
+# TODO: ironSource — per ironSource's own app-ads.txt docs, add this line
+# with your real Publisher Account ID (dashboard: Account/profile avatar
+# (bottom-left) -> Account -> API tab -> Publisher ID section):
+# ironsrc.com, <your ironSource Publisher Account ID>, DIRECT
 
 # TODO: AppLovin — paste the exact line from AppLovin's dashboard:
 # applovin.com, <your AppLovin account ID>, DIRECT, <cert ID>
