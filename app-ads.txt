@@ -172,6 +172,9 @@ my-cast.tv, 987033, RESELLER, 8c33fe1bd714ffd7
 # docs.unity.com/en-us/grow/programmatic/ironsource-exchange/app-ads-txt)
 ironsrc.com, 279929, DIRECT
 
+# Meta Audience Network
+facebook.com, 1643688664251137, DIRECT, c3e20eee3f780d68
+
 # TODO: AppLovin — not active yet; add once it is. Paste the exact line
 # from AppLovin's dashboard:
 # applovin.com, <your AppLovin account ID>, DIRECT, <cert ID>
