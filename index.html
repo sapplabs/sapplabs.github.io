@@ -54,7 +54,7 @@
   nav.site a{color:var(--text-muted); font-size:14px; margin-left:22px; font-weight:500}
   nav.site a:hover{color:var(--text)}
 
-  .hero{padding:24px 0 48px; text-align:left}
+  .hero{padding:64px 0 16px; text-align:left}
   .hero h1{
     font-size:clamp(32px,5vw,48px);
     line-height:1.14;
@@ -114,9 +114,10 @@
   .app-card .cta svg{width:16px; height:16px}
   .app-card .cta.soon{background:var(--border); color:var(--text-muted); cursor:default}
   .app-card .cta.soon:hover{opacity:1}
-  .apps-top{padding:40px 0 0}
-  .apps-top h1{font-size:clamp(26px,4vw,34px); letter-spacing:-.02em; margin:0 0 6px}
+  .apps-top{padding:24px 0 0}
+  .apps-top .apps-title{font-size:clamp(26px,4vw,34px); letter-spacing:-.02em; margin:0 0 6px}
   .apps-top p.lead{color:var(--text-muted); font-size:16px; margin:0 0 24px}
+  footer .tm{flex-basis:100%; font-size:12px; opacity:.8}
   .app-card .tags{font-size:12.5px; color:var(--text-muted); margin:-4px 0 0}
 
   .principles{
@@ -164,8 +165,13 @@
       </nav>
     </header>
 
+    <section class="hero">
+      <h1>Apps made by a <span class="grad">small, independent team</span>,<br>not a corporation.</h1>
+      <p>Sapp Labs isn't a big company looking to collect your data and sell it. It's a small, independent team putting genuinely useful technology in your hands — for free or close to it — without misusing your personal information to do it.</p>
+      <p class="sub">Everything stays on your device. Nothing you open is ever uploaded anywhere.</p>
+    </section>
     <section id="apps" class="apps-top">
-      <h1>Our apps</h1>
+      <h2 class="apps-title">Our apps</h2>
       <p class="lead">Simple Android apps for your documents. Everything works on your device: nothing you open is uploaded.</p>
       <div class="apps">
         <div class="app-card">
@@ -215,11 +221,6 @@
         </div>
       </div>
     </section>
-    <section class="hero">
-      <h1>Apps made by a <span class="grad">small, independent team</span>,<br>not a corporation.</h1>
-      <p>Sapp Labs isn't a big company looking to collect your data and sell it. It's a small, independent team putting genuinely useful technology in your hands — for free or close to it — without misusing your personal information to do it.</p>
-      <p class="sub">Everything stays on your device. Nothing you open is ever uploaded anywhere.</p>
-    </section>
 
     <section>
       <p class="section-label">How we build</p>
@@ -227,7 +228,7 @@
         <div class="principle">
           <span class="icon">🔒</span>
           <h3>Privacy first, always</h3>
-          <p>Your files and data stay on your device — never uploaded, tracked, or sold to anyone. That's not a feature, it's the baseline.</p>
+          <p>Your files stay on your device — never uploaded or sold to anyone. That's not a feature, it's the baseline. Where an app shows ads, our <a href="privacy.html">privacy policy</a> spells out exactly what the ad partners collect.</p>
         </div>
         <div class="principle">
           <span class="icon">🧑‍💻</span>
@@ -250,6 +251,7 @@
     <footer>
       <div>© <span id="y">2026</span> Sapp Labs</div>
       <div><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="mailto:sapp.labs@gmail.com">sapp.labs@gmail.com</a></div>
+      <div class="tm">Microsoft, Word and Excel are trademarks of Microsoft Corporation; Android and Google Play are trademarks of Google LLC. Sapp Labs is an independent developer, not affiliated with Microsoft, Google or Adobe.</div>
     </footer>
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>

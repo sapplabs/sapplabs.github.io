@@ -114,10 +114,10 @@
       <p>We're a small, independent developer, not a company with a data-collection business model. These apps are built to do one job — open a file, or make one — and get out of your way.</p>
 
       <h2>Your files</h2>
-      <p>Every file you open is read and rendered entirely on your device. None of these apps upload, transmit, or otherwise send the contents of your files anywhere. The readers (PDF Reader, Docx Reader and Excel Reader) only ever read files — they never modify or delete them. PDF Maker reads only the photos and PDFs you pick or share with it, and saves each result as a new file in the place you choose; it never changes or deletes your original files.</p>
+      <p>Every file you open is read and rendered entirely on your device. None of these apps upload, transmit, or otherwise send the contents of your files anywhere on their own. A file only leaves the app when you choose to share it with another app (for example an email or messaging app), and from then on that app handles it. The readers (PDF Reader, Docx Reader and Excel Reader) never change the contents of your files. Excel Reader only reads files. PDF Reader and Docx Reader also let you delete or share a file from their file list, but only when you choose Delete or Share for that file; a deleted file can't be recovered by the app. PDF Maker reads only the photos and PDFs you pick or share with it, and saves each result as a new file in the place you choose; it never changes or deletes your original files.</p>
 
       <h2>The "All files access" permission</h2>
-      <p>PDF Reader, Docx Reader and Excel Reader request Android's All files access permission (<code>MANAGE_EXTERNAL_STORAGE</code>) so it can list and open supported files already on your device, without you having to pick each one individually through a file browser. This permission is used solely to find and open files of the type that app supports (PDF, DOCX, or XLSX/CSV) — it is never used to read, modify, or transmit any other file or data on your device. You can decline this permission and still open individual files directly through your device's file manager or another app's "Share"/"Open with" menu. <strong>PDF Maker requests no permissions at all</strong>: it uses Android's own file picker and save dialog, so it only ever sees the files you choose.</p>
+      <p>PDF Reader, Docx Reader and Excel Reader request Android's All files access permission (<code>MANAGE_EXTERNAL_STORAGE</code>) so it can list and open supported files already on your device, without you having to pick each one individually through a file browser. This permission is used solely to find and open files of the type that app supports (PDF, DOCX, or XLSX/CSV), and, in PDF Reader and Docx Reader, to delete or share such a file when you ask — it is never used to read, modify, or transmit any other file or data on your device. You can decline this permission and still open individual files directly through your device's file manager or another app's "Share"/"Open with" menu. <strong>PDF Maker requests no permissions at all</strong>: it uses Android's own file picker and save dialog, so it only ever sees the files you choose.</p>
 
       <h2>Advertising (PDF Reader and Docx Reader only)</h2>
       <p>PDF Reader and Docx Reader are supported by ads so they can stay free. They use Unity LevelPlay (formerly ironSource) as an ad mediation service, which may serve ads from these networks: Unity Ads, ironSource Ads, Google AdMob and Meta Audience Network. <strong>Excel Reader and PDF Maker do not include any ads, ad SDKs, or internet access.</strong></p>
@@ -165,12 +165,12 @@
       <h2>Changes to this policy</h2>
       <p>If this policy changes, the update will be posted on this page with a new "Last updated" date above.</p>
 
+      <h2>Other services</h2>
+      <p>Our apps work alongside services we don't control, such as Google Play, the ad partners named above, and any app you share a file with. Their handling of your data is governed by their own terms and privacy policies, not this one. See also our <a href="terms.html">Terms of Service</a>.</p>
+
       <h2>Contact</h2>
       <p>Questions about this policy or how a specific app handles data: <a href="mailto:sapp.labs@gmail.com">sapp.labs@gmail.com</a>.</p>
-
-      <div class="note">
-        <strong>Note for future edits:</strong> if a new ad SDK, permission, or data-collecting feature is added to any of these apps, update this page <em>and</em> that app's Play Console Data Safety form in the same change — they need to stay consistent with each other and with reality.
-      </div>
+      <!-- Note for future edits: if a new ad SDK, permission, or data-collecting feature is added to any of these apps, update this page and that app's Play Console Data Safety form in the same change — they need to stay consistent with each other and with reality. -->
     </article>
 
     <footer>
