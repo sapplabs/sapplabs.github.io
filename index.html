@@ -54,7 +54,7 @@
   nav.site a{color:var(--text-muted); font-size:14px; margin-left:22px; font-weight:500}
   nav.site a:hover{color:var(--text)}
 
-  .hero{padding:64px 0 48px; text-align:left}
+  .hero{padding:24px 0 48px; text-align:left}
   .hero h1{
     font-size:clamp(32px,5vw,48px);
     line-height:1.14;
@@ -112,6 +112,12 @@
   }
   .app-card .cta:hover{opacity:.85}
   .app-card .cta svg{width:16px; height:16px}
+  .app-card .cta.soon{background:var(--border); color:var(--text-muted); cursor:default}
+  .app-card .cta.soon:hover{opacity:1}
+  .apps-top{padding:40px 0 0}
+  .apps-top h1{font-size:clamp(26px,4vw,34px); letter-spacing:-.02em; margin:0 0 6px}
+  .apps-top p.lead{color:var(--text-muted); font-size:16px; margin:0 0 24px}
+  .app-card .tags{font-size:12.5px; color:var(--text-muted); margin:-4px 0 0}
 
   .principles{
     display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
@@ -153,10 +159,62 @@
       <nav class="site">
         <a href="#apps">Apps</a>
         <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
         <a href="mailto:sapp.labs@gmail.com">Contact</a>
       </nav>
     </header>
 
+    <section id="apps" class="apps-top">
+      <h1>Our apps</h1>
+      <p class="lead">Simple Android apps for your documents. Everything works on your device: nothing you open is uploaded.</p>
+      <div class="apps">
+        <div class="app-card">
+          <div class="app-head">
+            <img src="assets/icon-pdf-reader.png" alt="PDF Reader icon">
+            <h2>PDF Reader</h2>
+          </div>
+          <p class="desc">Open and read PDF files straight from your device. No sign-in, no cloud upload, no clutter — just your files, kept simple.</p>
+          <p class="tags">Free · Ad-supported</p>
+          <a class="cta" href="https://play.google.com/store/apps/details?id=com.gappstudios.autowifi3gdataswitch.san.basicpdfviewer" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.37L13.69 12l-9.85 9.87c-.5-.26-.84-.78-.84-1.37zm13.81-7.81L6.05 2.66l10.76 6.14c.6.34.6 1.2 0 1.55l-10.76 6.14 10.76-6.15zM17.5 12l3.07-1.75c.63-.36 1.43.1 1.43.82s-.5.9-1.43.82L17.5 12z"/></svg>
+            Get it on Google Play
+          </a>
+        </div>
+        <div class="app-card">
+          <div class="app-head">
+            <img src="assets/icon-docx-reader.png" alt="Docx Reader icon">
+            <h2>Docx Reader</h2>
+          </div>
+          <p class="desc">Open and read Word documents straight from your device, without needing Microsoft Office installed. Just your files, kept simple.</p>
+          <p class="tags">Free · Ad-supported</p>
+          <a class="cta" href="https://play.google.com/store/apps/details?id=com.docxreader.sapplabs.docxreader" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.37L13.69 12l-9.85 9.87c-.5-.26-.84-.78-.84-1.37zm13.81-7.81L6.05 2.66l10.76 6.14c.6.34.6 1.2 0 1.55l-10.76 6.14 10.76-6.15zM17.5 12l3.07-1.75c.63-.36 1.43.1 1.43.82s-.5.9-1.43.82L17.5 12z"/></svg>
+            Get it on Google Play
+          </a>
+        </div>
+        <div class="app-card">
+          <div class="app-head">
+            <img src="assets/icon-excel-reader.png" alt="Excel Reader icon">
+            <h2>Excel Reader</h2>
+          </div>
+          <p class="desc">Open and view Excel spreadsheets (.xlsx) and CSV files on your device, switch between sheets and search inside them. No internet needed.</p>
+          <p class="tags">Free · No ads</p>
+          <a class="cta" href="https://play.google.com/store/apps/details?id=com.sapplabs.excelreader" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.37L13.69 12l-9.85 9.87c-.5-.26-.84-.78-.84-1.37zm13.81-7.81L6.05 2.66l10.76 6.14c.6.34.6 1.2 0 1.55l-10.76 6.14 10.76-6.15zM17.5 12l3.07-1.75c.63-.36 1.43.1 1.43.82s-.5.9-1.43.82L17.5 12z"/></svg>
+            Get it on Google Play
+          </a>
+        </div>
+        <div class="app-card">
+          <div class="app-head">
+            <img src="assets/icon-pdf-maker.png" alt="PDF Maker icon">
+            <h2>PDF Maker</h2>
+          </div>
+          <p class="desc">Turn photos into a PDF, merge, split and compress PDFs, and add your drawn signature. All offline, with no permissions needed.</p>
+          <p class="tags">Free · No ads</p>
+          <span class="cta soon">Coming soon to Google Play</span>
+        </div>
+      </div>
+    </section>
     <section class="hero">
       <h1>Apps made by a <span class="grad">small, independent team</span>,<br>not a corporation.</h1>
       <p>Sapp Labs isn't a big company looking to collect your data and sell it. It's a small, independent team putting genuinely useful technology in your hands — for free or close to it — without misusing your personal information to do it.</p>
@@ -184,42 +242,14 @@
       </div>
     </section>
 
-    <section id="apps">
-      <p class="section-label">Apps</p>
-      <div class="apps">
-        <div class="app-card">
-          <div class="app-head">
-            <img src="assets/icon-pdf-reader.png" alt="PDF Reader icon">
-            <h2>PDF Reader</h2>
-          </div>
-          <p class="desc">Open and read PDF files straight from your device. No sign-in, no cloud upload, no clutter — just your files, kept simple.</p>
-          <a class="cta" href="https://play.google.com/store/apps/details?id=com.gappstudios.autowifi3gdataswitch.san.basicpdfviewer" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.37L13.69 12l-9.85 9.87c-.5-.26-.84-.78-.84-1.37zm13.81-7.81L6.05 2.66l10.76 6.14c.6.34.6 1.2 0 1.55l-10.76 6.14 10.76-6.15zM17.5 12l3.07-1.75c.63-.36 1.43.1 1.43.82s-.5.9-1.43.82L17.5 12z"/></svg>
-            Get it on Google Play
-          </a>
-        </div>
-
-        <div class="app-card">
-          <div class="app-head">
-            <img src="assets/icon-docx-reader.png" alt="Docx Reader icon">
-            <h2>Docx Reader</h2>
-          </div>
-          <p class="desc">Open and read Word documents straight from your device, without needing Microsoft Office installed. Just your files, kept simple.</p>
-          <a class="cta" href="https://play.google.com/store/apps/details?id=com.docxreader.sapplabs.docxreader" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.37L13.69 12l-9.85 9.87c-.5-.26-.84-.78-.84-1.37zm13.81-7.81L6.05 2.66l10.76 6.14c.6.34.6 1.2 0 1.55l-10.76 6.14 10.76-6.15zM17.5 12l3.07-1.75c.63-.36 1.43.1 1.43.82s-.5.9-1.43.82L17.5 12z"/></svg>
-            Get it on Google Play
-          </a>
-        </div>
-      </div>
-    </section>
 
     <div class="note">
-      <strong>Why free or close to it?</strong> These apps are supported by small, non-intrusive ads instead of your data — so the tech stays accessible without anyone needing to profit from your personal information.
+      <strong>Why free?</strong> PDF Reader and Docx Reader are supported by small, non-intrusive ads, and Excel Reader and PDF Maker have no ads at all. Either way, the apps stay free without anyone profiting from your personal information.
     </div>
 
     <footer>
       <div>© <span id="y">2026</span> Sapp Labs</div>
-      <div><a href="privacy.html">Privacy Policy</a> · <a href="mailto:sapp.labs@gmail.com">sapp.labs@gmail.com</a></div>
+      <div><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="mailto:sapp.labs@gmail.com">sapp.labs@gmail.com</a></div>
     </footer>
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
